@@ -2,7 +2,7 @@
 <html>
   <head>
     <meta charset="utf-8">
-    <link rel="stylesheet" href="css/boostrap.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/styles.css">
     <script src="js/jquery-3.3.1.js"></script>
     <script src="js/scripts.js"></script>
@@ -12,10 +12,18 @@
     <div class="container">
       <h1>Let's play Ping-Pong.</h1>
       <h3>Here's how it works:</h3>
+      <p>Once you enter a number below, the mystical ping-pong machine will return a range of numbers between 1 and your chosen number. However, there are three exceptions:</p>
+      <ul>
+        <li>If your number is divisible by 3, it will be replaced with "ping"</li>
+        <li>If your number is divisible by 5, it will be replace with "pong"</li>
+        <li>If your number is divisible by 15, it will be replaced with "pingpong"</li>
+      </ul>
       <form id="number">
         <div class="form-group">
-
+          <label for="number">Enter your number:</label>
+          <input id="number" type="text">
         </div>
+        <button type="submit" class="btn btn-success">Submit</button>
       </form>
     </div>
   </body>
