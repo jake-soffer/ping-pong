@@ -1,7 +1,6 @@
 // BUSINESS LOGIC
 
 var pongMachine = function(number) {
-
   var resultArray = [];
   for (var i = 1; i <= number; i += 1) {
     if ((i % 3 === 0) && (i % 5 !== 0)) {
@@ -18,7 +17,6 @@ var pongMachine = function(number) {
 
 var makeUL = function(resultArray) {
   var list = document.createElement("ul");
-
     for(var i = 0; i < resultArray.length; i+=1) {
         var item = document.createElement("li");
         item.appendChild(document.createTextNode(resultArray[i]));
@@ -32,12 +30,18 @@ $(document).ready(function() {
   $("form#number").submit(function(event) {
     event.preventDefault();
     var number = parseInt($("input#number").val());
-    var resultArray = pongMachine(number);
-    var list = makeUL(resultArray)
 
-    $("button#submit").hide();
-    $(".answer").append(list);
-    $(".results").show();
+    if (number >= 1) {
+      var resultArray = pongMachine(number);
+      var list = makeUL(resultArray)
+      $("form#number").hide();
+      $("button#submit").hide();
+      $(".answer").append(list);
+      $(".number").text(number);
+      $(".results").fadeIn();
+    } else {
+      alert("Please enter a valid number.")
+    }
   });
   $("button#startover").click(function() {
     location.reload();

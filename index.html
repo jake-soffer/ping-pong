@@ -17,9 +17,9 @@
           <h3>Here's how it works:</h3>
           <p>Enter a number in the input below. Once you enter your number, the mystical ping-pong machine will return a range of numbers between 1 and your chosen number. However, there are three exceptions:</p>
           <ul>
-            <li>If your number is divisible by 3, it will be replaced with "ping"</li>
-            <li>If your number is divisible by 5, it will be replaced with "pong"</li>
-            <li>If your number is divisible by 15, it will be replaced with "pingpong"</li>
+            <li>If a number is divisible by 3, it will be replaced with "ping"</li>
+            <li>If a number is divisible by 5, it will be replaced with "pong"</li>
+            <li>If a number is divisible by 15, it will be replaced with "pingpong"</li>
           </ul>
           <form id="number">
             <div class="form-group">
@@ -29,8 +29,8 @@
             <button id="submit" type="submit" class="btn btn-danger">Submit</button>
           </form>
           <div class="results">
+            <h3>Your picked the number <span class="number"></span>. Your results are listed below.</h3>
             <button id="startover" class="btn btn-warning">Start over</button>
-            <h3>Results</h3>
             <div class="answer">
             </div>
           </div>
