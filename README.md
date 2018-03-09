@@ -52,6 +52,9 @@ _Jake's Ping-Pong Machine is a nifty tool that demonstrates the power of arrays 
 * _It will alert the user if a negative number or 0 is submitted._
   * _Example input: 0_
   * _Alert: "Value must be greater than or equal to 1."_
+* _It will alert the user if a number great than 10000 is submitted._
+  * _Example input: 10001_
+  * _Alert: "Value must be less than or equal to 10000."_
 * _It will alert the user if a null input is submitted._
   * _Example input:_
   * _Alert: "Please enter a valid number."_
