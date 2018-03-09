@@ -1,4 +1,5 @@
 // BUSINESS LOGIC
+
 var pongMachine = function(number) {
 
   var resultArray = [];
@@ -35,9 +36,8 @@ $(document).ready(function() {
     var list = makeUL(resultArray)
 
     $("button#submit").hide();
-    $(".answer").prepend(list);
-    $("button#startover").show();
-    $(".answer").show();
+    $(".answer").append(list);
+    $(".results").show();
   });
   $("button#startover").click(function() {
     location.reload();

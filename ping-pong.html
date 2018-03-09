@@ -10,23 +10,31 @@
   </head>
   <body>
     <div class="container">
-      <h1>Let's play Ping-Pong.</h1>
-      <h3>Here's how it works:</h3>
-      <p>Enter a number in the input below. Once you enter your number, the mystical ping-pong machine will return a range of numbers between 1 and your chosen number. However, there are three exceptions:</p>
-      <ul>
-        <li>If your number is divisible by 3, it will be replaced with "ping"</li>
-        <li>If your number is divisible by 5, it will be replaced with "pong"</li>
-        <li>If your number is divisible by 15, it will be replaced with "pingpong"</li>
-      </ul>
-      <form id="number">
-        <div class="form-group">
-          <label for="number">Enter your number:</label>
-          <input id="number" type="number" min="1">
+      <div class="row">
+        <div class="col-md-6">
+          <h1><strong>Let's play Ping-Pong.</strong></h1>
+          <img src="img/pingpong.gif" alt="pingpong">
+          <h3>Here's how it works:</h3>
+          <p>Enter a number in the input below. Once you enter your number, the mystical ping-pong machine will return a range of numbers between 1 and your chosen number. However, there are three exceptions:</p>
+          <ul>
+            <li>If your number is divisible by 3, it will be replaced with "ping"</li>
+            <li>If your number is divisible by 5, it will be replaced with "pong"</li>
+            <li>If your number is divisible by 15, it will be replaced with "pingpong"</li>
+          </ul>
+          <form id="number">
+            <div class="form-group">
+              <label for="number">Enter your number:</label>
+              <input id="number" type="number" min="1">
+            </div>
+            <button id="submit" type="submit" class="btn btn-danger">Submit</button>
+          </form>
+          <div class="results">
+            <button id="startover" class="btn btn-warning">Start over</button>
+            <h3>Results</h3>
+            <div class="answer">
+            </div>
+          </div>
         </div>
-        <button id="submit" type="submit" class="btn btn-success">Submit</button>
-      </form>
-      <button id="startover" class="btn btn-warning">Start over</button>
-      <div class="answer">
       </div>
     </div>
   </body>

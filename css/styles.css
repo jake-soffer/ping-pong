@@ -1,7 +1,7 @@
-#startover {
+.results {
   display: none;
 }
 
-.answer {
-  display: none;
+body {
+  background-color: lightblue;
 }
