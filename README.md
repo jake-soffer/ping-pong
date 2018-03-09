@@ -1,6 +1,6 @@
 # _Jake's Ping-Pong Machine_
 
-#### A magical, mathematical engine that performs cool javascript wizardry to a number of your choice. 
+#### A magical, mathematical engine that performs mind-blowing javascript wizardry to a number of your choice.
 
 #### By _**Jake Soffer**_
 
@@ -51,7 +51,7 @@ _Jake's Ping-Pong Machine is a nifty tool that demonstrates the power of arrays 
     * _pingpong_
 * _It will alert the user if a null input is submitted._
   * _Example input:_
-  * _Example output: "Please enter a valid number."_
+  * _Alert: "Please enter a valid number."_
 
 ## Setup/Installation Requirements
 
