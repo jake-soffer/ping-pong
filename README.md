@@ -82,4 +82,4 @@ _This program was developed using HTML, CSS, Bootstrap, JavaScript and jQuery 3.
 
 ### License
 
-Copyright (c) 2015 **_Jake Soffer_**
+Copyright (c) 2018 **_Jake Soffer_**
