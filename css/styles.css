@@ -1,3 +1,7 @@
-.results {
+#startover {
+  display: none;
+}
+
+.answer {
   display: none;
 }

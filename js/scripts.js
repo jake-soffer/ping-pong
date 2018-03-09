@@ -12,8 +12,17 @@ var pongMachine = function(number) {
     } else {
       resultArray.push(i);
     }
-  }
-  return resultArray;
+  } return resultArray;
+};
+
+var makeUL = function(resultArray) {
+  var list = document.createElement("ul");
+
+    for(var i = 0; i < resultArray.length; i+=1) {
+        var item = document.createElement("li");
+        item.appendChild(document.createTextNode(resultArray[i]));
+        list.appendChild(item);
+    } return list;
 };
 
 // UI LOGIC
@@ -23,8 +32,14 @@ $(document).ready(function() {
     event.preventDefault();
     var number = parseInt($("input#number").val());
     var resultArray = pongMachine(number);
+    var list = makeUL(resultArray)
 
-    $(".results").show();
-    $(".answer").text(resultArray);
+    $("button#submit").hide();
+    $(".answer").prepend(list);
+    $("button#startover").show();
+    $(".answer").show();
+  });
+  $("button#startover").click(function() {
+    location.reload();
   });
 });
